@@ -27,7 +27,7 @@ class LessonAdmin(admin.ModelAdmin):
     list_display = ['title']
 
 class QuestionAdmin(admin.ModelAdmin):
-    inlines = [ChoiceInLine]
+    inlines = [ChoiceInline]
     list_display = ['content']
 
 # <HINT> Register Question and Choice models here
